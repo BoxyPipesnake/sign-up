@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+}
+
+label {
+    display: block;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    min-height: 100vh;
+}
+
+.bg-image {
+    background-image: url('images/coffee.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.col-form {
+    align-self: center;
+}
+
+.col-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+
+.form__text {
+    grid-column: 1 / -1;
+}
