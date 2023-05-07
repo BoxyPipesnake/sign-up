@@ -23,6 +23,7 @@ label {
 
 body {
     font-size: 1.2rem;
+    background-color: #faedcd;
 }
 
 img {
@@ -41,6 +42,16 @@ img {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    filter: hue-rotate();
+}
+
+.logo {
+    background-color: #28282d;
+    width: 100%;
+    height: 120px;
+    background-image: url('images/coffe_logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .col-form {
@@ -54,6 +65,10 @@ img {
     padding: 2rem;
 }
 
+.description {
+    line-height: 1.2;
+}
+
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -63,6 +78,7 @@ img {
 
 .form__text {
     grid-column: 1 / -1;
+    color: #28282d;
 }
 
 
@@ -136,7 +152,10 @@ img {
   transform: translate(0, 5%);
 }
 
-.log-in__span {
+/* end CSS button */
+
+.log-in__link {
+    text-decoration: none;
     display: inline-block;
     color: #28282d;
     font-weight: 700;
