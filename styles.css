@@ -33,7 +33,7 @@ img {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 1.7fr;
+    grid-template-columns: 1fr;
     min-height: 100vh;
 }
 
@@ -43,6 +43,9 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     filter: hue-rotate();
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -52,6 +55,17 @@ img {
     background-image: url('images/coffe_logo.png');
     background-repeat: no-repeat;
     background-position: center center;
+}   
+
+
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: 1fr 1.7fr;
+    }
+
+    .bg-image {
+        display: block;
+    }
 }
 
 .col-form {
@@ -71,9 +85,15 @@ img {
 
 .form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     column-gap: 3rem;
     row-gap: 1rem;
+}
+
+@media (min-width: 530px) {
+    .form {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .form__text {
