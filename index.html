@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     
@@ -24,12 +25,12 @@
                     like this in your life to help you realize your deepest dreams.
                     Sign up now to get started.
                 </p>
-                <form class="form" action="#">
+                <form class="form" action="/" id="form">
                     <h2 class="form__text">Let´s do this!</h2>
 
                     <div class="form__name">
                         <label for="first-name">first name</label>
-                        <input type="text" id="first-name">
+                        <input type="text" id="first-name" required>
                     </div>
                     <div class="form__last-name">
                         <label for="last-name">last name</label>
@@ -42,20 +43,23 @@
                     </div>
                     <div class="form__phone">
                         <label for="phone">phone number</label>
-                        <input type="tel">
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
 
-                    <div class="form__password">
+                    <div class="form_control form__password">
                         <label for="password">password</label>
                         <input type="password" id="password">
+                        <small>Error Message</small>
                     </div>
-                    <div class="form__conf-password">
+                    <div class="form_control form__conf-password">
                         <label for="conf-password">confirm password</label>
-                        <input type="password">
+                        <input type="password" id="conf-password">
+                        <small>Error Message</small>
                     </div>
+
+                    <button class="btn-account button-86" type="submit">create account</button>   
                 </form>
 
-                <button class="btn-account button-86" type="submit">create account</button>   
                 <p class="log-in">Already have an account? <a href="#" class="log-in__link">Log in</a></p>
 
             </div>
